@@ -1,0 +1,46 @@
+.header{
+	color: black;
+	width: 900px;
+	height: 120px;
+	margin: 0 auto;
+}
+
+.header h1{
+	text-align: center;
+	margin-right: 20ox;
+	color: black;
+}
+
+.menu{
+	width: 900px;
+	height: 40px;
+	margin: 0 auto;
+	background-color: red;
+	border-top: 1px solid #000;
+	text-align: center;
+}
+
+.menu ul li{
+	display: inline;
+}
+
+.menu ul li a{
+	color: white;
+	margin: 0 20px;
+}
+
+.content{
+	margin: 0 auto;
+	background : #999;
+	width: 900px;
+	height: 400px;
+}
+
+.subc{
+	width: 290px;
+	height: 380px;
+	background: #fff;
+	border-radius: 10px;
+	float: left;
+	margin: 5px;
+}
