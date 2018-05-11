@@ -1,32 +1,32 @@
 .header{
-	color: black;
+	background-color: white;
 	width: 900px;
 	height: 120px;
 	margin: 0 auto;
 }
 
-.header h1{
-	text-align: center;
+.header p{
+	text-align: left;
 	margin-right: 20ox;
+	font-family: verdana;
 	color: black;
 }
 
-.menu{
-	width: 900px;
-	height: 40px;
-	margin: 0 auto;
-	background-color: red;
-	border-top: 1px solid #000;
-	text-align: center;
+.header p img{
+	float: left;
 }
 
-.menu ul li{
-	display: inline;
+.header h1{
+	float: left;
 }
 
-.menu ul li a{
+.nav {
+	background-image: url("images/header-bg,png");
+}
+
+.nav h1{
 	color: white;
-	margin: 0 20px;
+	text-align: center;
 }
 
 .content{
@@ -36,9 +36,13 @@
 	height: 400px;
 }
 
+.content h1{
+	text-align: center;
+}
+
 .subc{
-	width: 290px;
-	height: 380px;
+	width: 120px;
+	height: 120px;
 	background: #fff;
 	border-radius: 10px;
 	float: left;
