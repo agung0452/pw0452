@@ -1,14 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="fa/web-fonts-with-css/css/fontawesome-all.css">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+    <script>var app = angular.module("myApp", ["ngRoute"]);
+      app.config(function($routeProvider){
+          $routeProvider
+          .when("/", {
+          templateUrl : "main.htm"
+          })
+          .when("/about", {
+          templateUrl : "about.htm"
+          });
+
+      });
+    </script>
   </head>
 
   <body>
-  	<div class="container">
+  	<div ng-app="myApp" class="container">
   		<div class="row">
   			<div class="col-md-12 header">
   				<h1>Title of the web</h1>
@@ -16,26 +31,11 @@
   		</div>
   		<div class="row">
   			<div class="col-md-12 menu">
-  				Some Menu Will be placed here!
+  				<i class="fas fa-home"></i>
+            <a href="#!">home</a> |<a href="#!about">about</a> | product | contact
   			</div>	
   		</div>
-  		<div class="row">
-  			<div class="col-md-4">
-  				<p><i class="fab fa-angellist"></i>Some Menu Will be placed here!</p>
-  			</div>
-  			<div class="col-md-4">
-  				<div>
-  					<h1><i class="fas fa-anchor"></i></h1>
-  				</div>
-  				<p>Some Menu Will be placed here!</p>
-  			</div>
-  			<div class="col-md-4">
-  				<div>
-  					<h1><i class="fab fa-apper"></i></h1>
-  				</div>
-  				<p>Some Menu Will be placed here!</p>
-  			</div>	
-  		</div>
+  		<ng-view></ng-view>
   	</div>
   </body>
 </html>
